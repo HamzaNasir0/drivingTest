@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>British Driving School</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Driving lessons with British Driving School. Friendly, patient instructor offering manual and automatic lessons.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container nav">
+            <div class="brand">British Driving School</div>
+
+            <nav class="navlinks">
+                <a href="#services">Services</a>
+                <a href="#reviews">Reviews</a>
+                <a href="#success">Success</a>
+                <a href="#contact" class="pill">Contact</a>
+            </nav>
+
+            <button class="menuBtn"></button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO -->
+        <section class="hero container">
+
+            <div>
+                <div class="badge">
+                    Patient Professional Modern Tuition
+                </div>
+
+                <h1>Driving lessons that fit around you.</h1>
+
+                <p class="sub">
+                    Manual and automatic lessons with a calm, patient instructor.
+                    Helping learners pass safely and confidently.
+                </p>
+
+                <div class="ctaRow">
+                    <a href="#" id="whatsappHero" class="btn btn--primary">
+                        Message on WhatsApp
+                    </a>
+                    <a href="#reviews" class="btn btn-outline">
+                        Read Reviews
+                    </a>
+                </div>
+
+                <div class="miniStats">
+                    <div class="miniStats__item">
+                        <strong>Flexible</strong>
+                        <span>Evenings & weekends available</span>
+                    </div>
+
+                    <div class="miniStats__item">
+                        <strong>Local</strong>
+                        <span>Covering your local area</span>
+                    </div>
+
+                    <div class="miniStats__item">
+                        <strong>Test Ready</strong>
+                        <span>Mock tests & local routes</span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- QUICK QUOTE CARD -->
+            <div class="hero__card">
+                <h2>Quick quote</h2>
+                <p class="muted">
+                    Send a WhatsApp message and Ill reply with availability and pricing.
+                </p>
+
+                <form id="quoteForm" class="form">
+
+                    <div class="formGrid">
+
+                        <label>
+                            Your name
+                            <input id="name" type="text" placeholder="e.g. Sam" required>
+                        </label>
+
+                        <label>
+                            Postcode / Area
+                            <input id="area" type="text" placeholder="e.g. SW1A" required>
+                        </label>
+
+                        <label>
+                            Lesson type
+                            <select id="type">
+                                <option value="Manual">Manual</option>
+                                <option value="Automatic">Automatic</option>
+                                <option value="Not sure">Not sure</option>
+                            </select>
+                        </label>
+
+                    </div>
+
+                    <label>
+                        Message
+                        <textarea id="message" rows="4"
+                            placeholder="What days/times suit you? Any experience?"></textarea>
+                    </label>
+
+                    <button type="submit" class="btn btn--primary">
+                        Send via WhatsApp
+                    </button>
+
+                    <p class="tiny muted">
+                        No email forms needed this opens WhatsApp with your message.
+                    </p>
+
+                </form>
+            </div>
+
+        </section>
+
+
+
+        <!-- SERVICES -->
+        <section id="services" class="section">
+            <div class="container">
+
+                <h2>Services</h2>
+
+                <div class="grid3">
+
+                    <div class="card">
+                        <h3>Beginner Lessons</h3>
+                        <p>
+                            Build confidence from the ground up with calm coaching and clear progress steps.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Refresher Lessons</h3>
+                        <p>
+                            Ideal for drivers returning after a break parking, roundabouts, motorway confidence.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Test Preparation</h3>
+                        <p>
+                            Mock tests, common faults, local routes and the final polish to help you pass.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- GOOGLE REVIEWS -->
+        <section id="reviews" class="section section--alt">
+            <div class="container">
+
+                <div class="row">
+                    <h2>Google Reviews</h2>
+                    <a href="#" id="googleWriteReview" class="btn btn-outline">
+                        Write a review
+                    </a>
+                </div>
+
+                <div class="embedWrap">
+                    <iframe id="googleEmbed" title="Google Reviews" loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- SUCCESS GALLERY -->
+        <section id="success" class="section">
+            <div class="container">
+
+                <h2>Recent Passes</h2>
+
+                <div class="gallery" id="gallery">
+                    <!-- Images loaded via JS or place manually below -->
+                </div>
+
+            </div>
+        </section>
+
+
+
+        <!-- CONTACT -->
+        <section id="contact" class="section section--alt">
+            <div class="container">
+
+                <h2>Contact</h2>
+
+                <div class="contactCard">
+
+                    <div>
+                        <h3>British Driving School</h3>
+                        <p class="muted">
+                            Manual & Automatic Driving Lessons
+                        </p>
+
+                        <ul class="bullets">
+                            <li>Friendly, patient instructor</li>
+                            <li>Flexible lesson times</li>
+                            <li>Test preparation & mock tests</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <a href="#" id="whatsappContact" class="btn btn--primary">
+                            Message on WhatsApp
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <p> <span id="year"></span> British Driving School</p>
+            <a href="#">Back to top </a>
+        </div>
+    </footer>
+
+
+
+    <!-- Floating WhatsApp Button -->
+    <a href="#" id="whatsappFloat" class="whatsappFloat">
+        WhatsApp
+    </a>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
