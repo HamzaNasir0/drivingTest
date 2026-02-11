@@ -1,6 +1,6 @@
 // ========= CONFIG (edit these) =========
 const CONFIG = {
-  whatsappNumber: "+447460898989", // <-- REPLACE with your number (UK format, no +, no spaces)
+  whatsappNumber: "+4444444444", // <-- REPLACE with your number (UK format, no +, no spaces)
   whatsappDefaultText: "Hi! I'm interested in driving lessons with British Driving School.",
   // Google:
   googlePlaceEmbedSrc: "", // <-- paste your Google "Place" embed iframe src here
@@ -160,3 +160,4 @@ renderReviewCards();
 renderNextGalleryBatch();
 setupLoadMore();
 setupMobileMenu();
+
